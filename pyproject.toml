@@ -1,0 +1,10 @@
+[tool.poetry]
+name = "test_project_1"
+version = "0.1.0"
+description = "A basic Python project."
+authors = ["Sonali Cornelio"]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+requests = "^2.31.0"
+boto3 = "^1.28.0"
