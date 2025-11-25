@@ -1,0 +1,22 @@
+{
+    "Event": {
+        "Records": [
+            {
+                "messageId": "4c6b252e-3355-4e6f-b320-cce8764f51f7",
+                "receiptHandle": "AQEB7VygRI9Zt19fsKogNyQA30wrYZYe21IZfvrzXBkh8gil+yhXEcdLrhuHZ5DZ7kEEBuJtddoMlPUit1ZluwXxRLuHdwtX4uOgZSUMJpPovUa2NFIAh9fAFisKBkQNrZWFYoHJyycnLR5anZyky0LgIdTkMVwuwvDLipKRGT6UA2wtO0W4EWrOQ7iNwpBz+P+HlvoSzlf6YsA6hcHWa/R9RQXUN0mWoj97ljqAowImkkUsn6iXJiHUQBal0y1XD9Uc0R4P14H9x2FCjLbbl1aVWtEdbIov4/3muUh8VnS5r9xb917iPYwXiYm0dmIwfC7zo5PjR4CsTJ/QTaG8I/SR3Z4ny8tXFLY+aSNfCNlle7ZBRdSpOX8QuIMj1Mhk+Uuso49SlidRBd5RC78THhdWLA==",
+                "body": "{\"Records\":[{\"eventVersion\":\"2.1\",\"eventSource\":\"aws:s3\",\"awsRegion\":\"ap-southeast-2\",\"eventTime\":\"2025-10-10T20:08:02.286Z\",\"eventName\":\"ObjectCreated:Copy\",\"userIdentity\":{\"principalId\":\"A1NRC6GLTZA903\"},\"requestParameters\":{\"sourceIPAddress\":\"14.200.246.214\"},\"responseElements\":{\"x-amz-request-id\":\"WP9DMEMCNS19W58C\",\"x-amz-id-2\":\"t0wQMIgPkMDClCos6v8Mf+mqgyfdSa7UgPAxIUoEGINQi0JPgpQQHKLUwcoYFQszc61vygz/CvYNGacRmOSX3k+U1/BiwTeR\"},\"s3\":{\"s3SchemaVersion\":\"1.0\",\"configurationId\":\"tf-s3-queue-20251010053652153000000001\",\"bucket\":{\"name\":\"source-bucket-80469\",\"ownerIdentity\":{\"principalId\":\"A1NRC6GLTZA903\"},\"arn\":\"arn:aws:s3:::source-bucket-80469\"},\"object\":{\"key\":\"test1.csv\",\"size\":205,\"eTag\":\"8dc8b0ed1996e28a03e18006f6e1fc7a\",\"sequencer\":\"0068E967A240D6F3AE\"}}}]}",
+                "attributes": {
+                    "ApproximateReceiveCount": "1",
+                    "SentTimestamp": "1760126882940",
+                    "SenderId": "AROA37QLMPMACKS5OOJGT:S3-PROD-END",
+                    "ApproximateFirstReceiveTimestamp": "1760126882952"
+                },
+                "messageAttributes": {},
+                "md5OfBody": "66e0e096ac1dc1c36319635162863da3",
+                "eventSource": "aws:sqs",
+                "eventSourceARN": "arn:aws:sqs:ap-southeast-2:954976299467:s3-event-queue",
+                "awsRegion": "ap-southeast-2"
+            }
+        ]
+    }
+}

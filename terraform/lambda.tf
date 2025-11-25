@@ -3,7 +3,7 @@
 data "archive_file" "lambda_zip" {
   type        = "zip"
   output_path = "${path.module}/lambda_function.zip"
-  source_file = "${path.module}/lambda_function.zip"
+  source_file = "../src/lambda_function.py"
 }
 
 resource "aws_lambda_function" "test_lambda" {

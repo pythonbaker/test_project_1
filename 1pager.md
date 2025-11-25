@@ -1,3 +1,6 @@
+
+![alt text](image.png)
+
 Learnings:
 AWS account- personal
 
@@ -9,6 +12,7 @@ added in .env folder (add this file in gitignore to avoid committing to git)
 
 Project 1 : use terraform to deploy aws resources lambda and s3
 deploy.sh script to deploy the terraform code.
+
 Lambda - can be deployed either as image or zip file. Try working on zip file first.
 
 To create lambda zip file:
@@ -24,12 +28,26 @@ data "archive_file" "lambda_zip" {
 In Terraform, path.module is a built‑in variable that points to the filesystem path of the module where the Terraform code is running.
 ```
 - First run zip_lambda code which zips the lambda code from lambda_build folder with requirements file and creates zip folder in terraform folder.
-Run bash script to zip lambda file: bash zip_lambda.sh
+Run bash script to zip lambda file:
+** bash zip_lambda.sh
 
 - Then terraform to use the above zip folder
-Run terraform locally via cli:  terraform/deploy.sh
+Run terraform locally via cli:
+** terraform/deploy.sh
 ```
 
+Test Lambda function:
+the file in lambda.tf uses src/lambda_function.py instead of zip file. (test this later )
+test lambda is working with following code
+
+```
+def handler(event, context):
+    print("Event: ", event)
+    return {
+        'statusCode': 200,
+        'body': json.dumps({'message': 'Lambda is working!'})
+    }
+```
 Tech stack:
 AWS -lambda and s3 bucket
 Terraform for deployment
@@ -53,3 +71,4 @@ GITHUB
 - git add .
 - git commit -m "Initial commit: Add project files with Terraform, Airflow, and Lambda configurations"
 - git push -u origin main
+

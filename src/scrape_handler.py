@@ -1,0 +1,3 @@
+- get the data from an url
+- create s3 bucket and upload the data to s3
+- create a airflow dag to move data from s3 to bigquery
